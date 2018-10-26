@@ -5,30 +5,31 @@
 <p>Customers can sign up and then their information will be stored in the database, and they can log in by using their email and passwords. Customers can be added and deleted. All the customer information can be found.</p>
 <p>All booking information or just one booking can be listed. Besides, these bookings can also be deleted or added. There is a property called “amount”, it can be increased by 1. The number of all booking amount can be found.</p>
 
-**Rooms:**<br>
-Resource&nbsp&nbsp&nbsp&nbsp&nbspURI(structure)&nbsp&nbsp&nbspHTTP Request<br>
-List of all Rooms&nbsp&nbsp&nbsp/rooms&nbsp&nbsp&nbspGET<br>
-Get a single room&nbsp&nbsp&nbsp/rooms/{roomNum}&nbsp&nbsp&nbspGET<br>
-Increase price&nbsp&nbsp/rooms/{id}/price&nbsp&nbsp&nbspPUT<br>
-Add a Room&nbsp&nbsp&nbsp/rooms&nbsp&nbsp&nbspPOST<br>
-Delete a Room&nbsp&nbsp&nbsp/rooms/{id}&nbsp&nbsp&nbspDELETE<br>
+**Rooms**<br>
+Resource               URI(structure)          HTTP Request<br>
+List of all Rooms          /rooms                GET<br>
+Get a single room          /rooms/{roomNum}      GET<br>
+Increase price             /rooms/{id}/price     PUT<br>
+Add a Room                 /rooms                POST<br>
+Delete a Room              /rooms/{id}           DELETE<br>
 
 **Customers:**<br>
-Resource&nbsp&nbsp&nbspURI(structure)&nbsp&nbsp&nbspHTTP Request<br>
-Customer sign up&nbsp&nbsp&nbsp/customers&nbsp&nbsp&nbspPOST<br>
-Customer log in&nbsp&nbsp&nbsp/customers/{email}&nbsp&nbsp&nbspPOST<br>
-List of all Customers&nbsp&nbsp&nbsp/customers&nbsp&nbsp&nbspGET<br>
-Get a single Customer&nbsp&nbsp&nbsp/customers/{customerID}&nbsp&nbsp&nbspGET<br>
-Delete a Customer&nbsp&nbsp&nbsp/customers/{id}&nbsp&nbsp&nbspDELETE<br>
+Resource                URI(structure)       HTTP Request<br>
+Customer sign up        /customers               POST<br>
+Customer log in	       /customers/{email}        POST<br>
+List of all Customers   /customers               GET<br>
+Get a single Customer   /customers/{customerID}  GET<br>
+Delete a Customer       /customers/{id}	         DELETE<br>
 
-**Bookings:**<br>  
-Resource&nbsp&nbsp&nbspURI(structure)&nbsp&nbsp&nbspHTTP Request<br>
-List of all Bookings&nbsp&nbsp&nbsp/bookings&nbsp&nbsp&nbspGET<br>
-Get a single Booking&nbsp&nbsp&nbsp/bookings/{id}&nbsp&nbsp&nbspGET<br>
-Delete a Booking&nbsp&nbsp&nbsp/bookings/{id}&nbsp&nbsp&nbspDELETE<br>
-Increase amount&nbsp&nbsp&nbsp/bookings/{id}/amount&nbsp&nbsp&nbspPUT<br>
-Add a booking&nbsp&nbsp&nbsp/bookings/{customerID}&nbsp&nbsp&nbspPOST<br>
-Total of Booking amount&nbsp&nbsp&nbsp/bookings/amount&nbsp&nbsp&nbspGET<br>
+**Bookings:**<br>
+Resource                URI(structure)       HTTP Request<br>
+List of all Bookings     /bookings               GET<br>
+Get a single Booking     /bookings/{id}          GET<br>
+Delete a Booking         /bookings/{id}          DELETE<br>
+Increase amount          /bookings/{id}/amount   PUT<br>
+Add a booking            /bookings/{customerID}  POST<br>
+Total of Booking amount  /bookings/amount        GET<br>
+
 
 <p>**Persistence approach:** Though the process is finished, data still exist by using mongoDB. Rooms, customers and booking information are all stored in the mongoDB to achieve persistence.</p>
 
